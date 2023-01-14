@@ -61,6 +61,9 @@ nav {
     width: 50%;
     position: relative;
 }
+.banner-right>img{
+    width: 100%;
+}
 .banner-btn{
     padding: 15px 35px 15px 25px;
     background-color: #E02C6D;
@@ -71,8 +74,8 @@ nav {
 }
 
 .background-circle{
-    height: 350px;
-    width: 350px;
+    height: 80%;
+    width: 80%;
     background-color: #f7f0ff;
     position: absolute;
     top: 10%;
@@ -80,10 +83,21 @@ nav {
     border-radius: 50%;
     z-index: -1;
 }
+/* company */
+.company{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border: 1px solid red;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    grid-row-gap: 10px;
+}
 
 
-
-
+/* responsive */
 @media only screen and (max-width: 576px) {
     .banner{
         flex-direction: column-reverse;
@@ -92,11 +106,17 @@ nav {
         text-align: center;
         margin-bottom: 20px;
     }
+    .banner-left>p{
+        width: 100%;
+    }
     .banner-right{
         width: 100%;
     }
     .banner-right>img{
         width: 100%;
+    }
+    .background-circle{
+        /* width: 0; */
     }
    nav ul{
     flex-direction: column;
